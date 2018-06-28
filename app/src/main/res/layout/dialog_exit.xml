@@ -1,0 +1,55 @@
+<RelativeLayout
+    android:padding="@dimen/screen_margin"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:text="@string/exit_dialog_title"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:textColor="@color/gray_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/title_tv"
+        android:layout_below="@id/title_tv"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        >
+
+
+    <!-- current layout doesn't fully supports api 16 (only 17) -->
+    <TextView
+        android:id="@+id/stay_tv"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:textColor="@color/positive_material_color"
+        android:layout_width="wrap_content"
+        android:text="@string/exit_dialog_stay"
+        android:layout_height="wrap_content"
+        />
+
+
+
+    <TextView
+        android:id="@+id/exit_tv"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:textColor="@color/tomato"
+        android:layout_width="wrap_content"
+        android:text="@string/exit_dialog_exit"
+        android:layout_height="wrap_content"
+        />
+
+    </LinearLayout>
+</RelativeLayout>

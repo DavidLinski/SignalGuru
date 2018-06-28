@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgr">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Last name"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="phone" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comment"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textMultiLine" />
+
+            <Button
+                android:id="@+id/send_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    
+
+</RelativeLayout>

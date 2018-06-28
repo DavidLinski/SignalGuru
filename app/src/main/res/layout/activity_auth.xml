@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgr"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="114dp"
+                android:layout_height="114dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1dip"
+                android:layout_marginTop="1px"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:text="Email:"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:id="@+id/Email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:layout_marginBottom="20dip"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:text="Password:"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:id="@+id/pass"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:layout_marginBottom="20dip"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/btnAuth"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:text="log in" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
